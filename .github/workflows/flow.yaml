@@ -25,3 +25,5 @@ jobs:
       - run: printenv
       # Les variables d'env sont passées au script (normalement)
       - run: node dummy.js
+        env: 
+          DATABASE_NAME: 'override du database name'
