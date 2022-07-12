@@ -1,5 +1,5 @@
-import { getRandomQuote } from '../src'
-import { quotes } from '../src/citations'
+import { getRandomQuote } from '../src/index.js'
+import { quotes } from '../src/citations.js'
 
 test('It gets a random quote', () => {
   const randomQuote = getRandomQuote()
