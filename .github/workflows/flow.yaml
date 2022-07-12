@@ -2,6 +2,9 @@ name: Tests CI/CD
 
 on: ["push"]
 
+env:
+  DATABASE_NAME: "test"
+
 jobs:
   dummy-job:
     name: "my job"
@@ -19,3 +22,4 @@ jobs:
       - run: node -v
       # ${{ ... }} utilise une variable pour le contexte
       - run: echo ${{ github.actor }}  ${{ github.event_name }}
+      - run: node dummy.js
