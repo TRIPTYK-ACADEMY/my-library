@@ -17,11 +17,11 @@
         # on récupère le contenu du dépôt
         - uses: actions/checkout@v3
         - run: ls -la
-        - name: "Installation de node"
+        - name: "Installation de node ${{ matrix.version }}x"
           uses: actions/setup-node@v3
           with:
-            # on dit d'installer la version 18
-            node-version: 18
+            # on dit d'installer la version 
+            node-version: ${{ matrix.version }}
         - run: node -v
         # ${{ ... }} utilise une variable pour le contexte
         - run: echo ${{ github.actor }}  ${{ github.event_name }}
