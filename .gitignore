@@ -2,6 +2,7 @@
 node_modules
 # on ignore le dossier coverage généré par jest
 coverage
+dist
 
 # pour MACOS
 .DS_Store
