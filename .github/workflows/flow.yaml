@@ -8,5 +8,11 @@ jobs:
     runs-on:  ubuntu-latest
     steps:
       - run: ls -la
+      # on récupère le contenu du dépôt
       - uses: actions/checkout@v3
       - run: ls -la
+      - name: "Installation de node"
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: node -v
