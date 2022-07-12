@@ -1,0 +1,7 @@
+.vscode
+.github
+src
+tests
+dummy.js
+jest.config.cjs
+.eslintrc.cjs
