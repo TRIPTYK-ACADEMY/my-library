@@ -5,3 +5,4 @@ tests
 dummy.js
 jest.config.cjs
 .eslintrc.cjs
+coverage
