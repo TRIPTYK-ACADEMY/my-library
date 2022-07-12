@@ -17,4 +17,5 @@ jobs:
           # on dit d'installer la version 18
           node-version: 18
       - run: node -v
-      - run: echo ${{ github.actor }}
+      # ${{ ... }} utilise une variable pour le contexte
+      - run: echo ${{ github.actor }}  ${{ github.event_name }}
