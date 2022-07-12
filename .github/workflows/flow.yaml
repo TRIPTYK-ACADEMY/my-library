@@ -14,5 +14,7 @@ jobs:
       - name: "Installation de node"
         uses: actions/setup-node@v3
         with:
+          # on dit d'installer la version 18
           node-version: 18
       - run: node -v
+      - run: echo ${{ github.actor }}
